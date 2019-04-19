@@ -7,7 +7,7 @@
       - tests/playbooks/run-post.yaml
     post-run: tests/collect-logs.yaml
     roles:
-      - zuul: openstack/ansible-role-nodepool
+      - zuul: windmill/ansible-role-nodepool
 
 # Testing for nodepool_install_method: pip
 - job:
@@ -29,7 +29,7 @@
     name: ansible-role-nodepool-src
     parent: ansible-role-nodepool-base
     required-projects:
-      - name: openstack-infra/nodepool
+      - name: zuul/nodepool
     vars:
       nodepool_git_update: false
       nodepool_install_method: git
