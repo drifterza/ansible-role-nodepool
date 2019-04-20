@@ -53,8 +53,8 @@ nodepool_file_launcher_logging_conf_owner: "{{ nodepool_user_name }}"
 nodepool_file_launcher_logging_conf_src: etc/nodepool/launcher-logging.conf
 
 # tasks/install.yaml
-nodepool_git_dest: "{{ ansible_user_dir }}/src/git.openstack.org/openstack-infra/nodepool"
-nodepool_git_uri: https://git.openstack.org/openstack-infra/nodepool
+nodepool_git_dest: "{{ ansible_user_dir }}/src/opendev.org/zuul/nodepool"
+nodepool_git_uri: https://opendev.org/zuul/nodepool
 nodepool_git_version: master
 # nodepool_git_refspec:
 # nodepool_git_update:

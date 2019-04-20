@@ -6,7 +6,7 @@ Ansible role to manage Nodepool
 
 * License: Apache License, Version 2.0
 * Documentation: https://ansible-role-nodepool.readthedocs.org
-* Source: https://git.openstack.org/cgit/openstack/ansible-role-nodepool
+* Source: https://opendev.org/windmill/ansible-role-nodepool
 * Bugs: https://bugs.launchpad.net/ansible-role-nodepool
 
 Description
