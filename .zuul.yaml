@@ -66,7 +66,6 @@
         - ansible-role-nodepool-src-fedora-latest
         - ansible-role-nodepool-src-ubuntu-bionic
         - tox-linters
-        - windmill-tox-molecule
     gate:
       jobs:
         - ansible-role-nodepool-docker
@@ -75,4 +74,3 @@
         - ansible-role-nodepool-src-fedora-latest
         - ansible-role-nodepool-src-ubuntu-bionic
         - tox-linters
-        - windmill-tox-molecule
