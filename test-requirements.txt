@@ -1,2 +1,2 @@
 ara
-molecule
+molecule<3.0.0

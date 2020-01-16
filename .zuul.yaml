@@ -55,12 +55,8 @@
       nodepool_file_nodepool_launcher_service_src: etc/systemd/system/nodepool-launcher.service.j2
 
 - project:
-    templates:
-      - windmill-jobs-fedora-latest
-      - windmill-jobs-bionic
     check:
       jobs:
-        - ansible-role-nodepool-docker
         - ansible-role-nodepool-fedora-latest
         - ansible-role-nodepool-ubuntu-bionic
         - ansible-role-nodepool-src-fedora-latest
@@ -68,7 +64,6 @@
         - tox-linters
     gate:
       jobs:
-        - ansible-role-nodepool-docker
         - ansible-role-nodepool-fedora-latest
         - ansible-role-nodepool-ubuntu-bionic
         - ansible-role-nodepool-src-fedora-latest
