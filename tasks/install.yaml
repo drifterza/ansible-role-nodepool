@@ -17,11 +17,11 @@
     nodepool_build_depends: "{{ __nodepool_build_depends | list }}"
   when: nodepool_build_depends is not defined
 
-- name: Ensure build dependencies are installed
+- name: Ensure build dependencies are present
   become: true
   package:
     name: "{{ nodepool_build_depends }}"
-    state: installed
+    state: present
   when: nodepool_install_method == 'git'
 
 - name: Define nodepool_pip_executable if needed
