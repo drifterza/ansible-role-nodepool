@@ -60,7 +60,6 @@
       - windmill-jobs-bionic
     check:
       jobs:
-        - ansible-role-nodepool-docker
         - ansible-role-nodepool-fedora-latest
         - ansible-role-nodepool-ubuntu-bionic
         - ansible-role-nodepool-src-fedora-latest
@@ -68,7 +67,6 @@
         - tox-linters
     gate:
       jobs:
-        - ansible-role-nodepool-docker
         - ansible-role-nodepool-fedora-latest
         - ansible-role-nodepool-ubuntu-bionic
         - ansible-role-nodepool-src-fedora-latest
